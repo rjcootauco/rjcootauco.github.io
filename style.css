@@ -1,0 +1,89 @@
+
+
+body, html { 
+  width: 100%;	
+  height: 100%;	
+  font-family: 'Faustina', serif;
+  background: url(intro-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+	justify-content: center;
+	max-width: 1000px;
+}
+
+.h-100 {
+	height: 70%!important;
+}
+
+h1 {
+	color: floralwhite;
+	font-size: 3em;
+}
+
+hr:not([size]) {
+	height: 2px;
+}
+
+hr {
+	color: #59b5ba;
+	border-width: 5px;
+	max-width: 185px;
+	opacity: 1;
+	margin: auto auto;
+}
+
+.buffer {
+	height: 1rem;
+}
+
+.btn {
+	font-weight: 700;
+	border-radius: 300px;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	background-color: #59b5ba;
+	border-color: #59b5ba;
+	margin-top: 15px;
+	
+}
+
+.btn-primary:hover {
+	background-color: #4529F2;
+	border-color: #4529F2;
+	transition: all 0.2s;
+	border-width: 4px;
+	
+}
+
+.btn-xl {
+	padding: 1rem 2rem;
+}
+
+.myname {
+	color: #dce0e6;
+	cursor: pointer;
+}
+
+.myname:hover {
+	transition: all 0.8s;
+	color: #4793ad;
+}
+
+.downclick {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+}
+
+.downclick:hover {
+	cursor: pointer;
+	transition: all 1s;
+	transform: scale(1.4);
+}
