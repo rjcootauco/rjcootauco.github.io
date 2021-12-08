@@ -1,5 +1,3 @@
-
-
 body, html { 
   width: 100%;	
   height: 100%;	
@@ -9,6 +7,19 @@ body, html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: #D3D3D3;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
 }
 
 .container {
@@ -66,16 +77,6 @@ hr {
 	padding: 1rem 2rem;
 }
 
-.myname {
-	color: #dce0e6;
-	cursor: pointer;
-}
-
-.myname:hover {
-	transition: all 0.8s;
-	color: #4793ad;
-}
-
 .downclick {
 	width: 25px;
 	height: 25px;
@@ -87,3 +88,71 @@ hr {
 	transition: all 1s;
 	transform: scale(1.4);
 }
+
+/* Popup container */
+.popup {
+	color: #dce0e6;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup:hover {
+	transition: all 0.8s;
+	color: #4793ad;
+}
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  font-size: 20px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+
+}
+
+.popuptext > a img{
+	width: 90%;
+	height: 90%;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
