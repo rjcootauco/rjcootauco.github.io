@@ -1,8 +1,9 @@
 body, html { 
   width: 100%;	
   height: 100%;	
-  font-family: 'Faustina', serif;
-  background: url(pics/intro-background.jpg) no-repeat center center fixed; 
+  font-family: Poppins, sans-serif;
+ /*background: url(pics/intro-background.jpg) no-repeat center center fixed; */
+  background-color: rgb(34, 40, 49);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,12 +37,17 @@ h1 {
 	font-size: 3em;
 }
 
+h2 {
+	color: floralwhite;
+	text-align: center;
+}
+
 hr:not([size]) {
 	height: 2px;
 }
 
 hr {
-	color: #59b5ba;
+	color: #abaaa9;
 	border-width: 5px;
 	max-width: 185px;
 	opacity: 1;
@@ -59,15 +65,15 @@ hr {
 }
 
 .btn-primary {
-	background-color: #59b5ba;
-	border-color: #59b5ba;
+	background-color: orange;
+	border-color: orange;
 	margin-top: 15px;
 	
 }
 
 .btn-primary:hover {
-	background-color: #4529F2;
-	border-color: #4529F2;
+	background-color: #e37507;
+	border-color: #e37507;
 	transition: all 0.2s;
 	border-width: 4px;
 	
@@ -91,7 +97,7 @@ hr {
 
 /* Popup container */
 .popup {
-	color: #dce0e6;
+	color: orange;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -99,7 +105,7 @@ hr {
 
 .popup:hover {
 	transition: all 0.8s;
-	color: #4793ad;
+	color: #e37507;
 }
 
 
@@ -156,3 +162,53 @@ hr {
   to {opacity:1 ;}
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+*{transition:all 0.3s ease-in-out;}
+
+.navbar{
+	position: fixed;
+  clear:both;
+  width: 100%;
+  overflow:auto;
+  background-color: rgba(57, 62, 70, 0.7);
+}
+
+nav{
+	float:right;
+	font-family: Poppins, sans-serif;
+	color: #D3D3D3;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.contact, .home, .aboutme {
+	color: #D3D3D3;
+	cursor: pointer;
+	font-family: Poppins, sans-serif;
+}
+
+.logo img{
+	float:left;
+	padding-left: 10px;
+}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; font-family:raleway;
+}
+
+ul li:hover{
+  color: orange;
+  
+}
+
+
+/*About Me Container*/
+.aboutme-container {
+	margin-top: 500px;
+}
