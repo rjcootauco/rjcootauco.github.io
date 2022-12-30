@@ -10,6 +10,9 @@ body, html {
   background-size: cover;
 }
 
+p {
+	color: floralwhite;
+}
 
 footer {
 	text-align: center;
@@ -46,8 +49,12 @@ hr:not([size]) {
 	height: 2px;
 }
 
-hr {
+hr#first {
 	color: #abaaa9;
+}
+
+hr {
+	color: orange;
 	border-width: 5px;
 	max-width: 185px;
 	opacity: 1;
@@ -186,7 +193,7 @@ nav{
 	padding-right: 10px;
 }
 
-.contact, .home, .aboutme {
+.contact, .home, .aboutme, .projects {
 	color: #D3D3D3;
 	cursor: pointer;
 	font-family: Poppins, sans-serif;
@@ -207,8 +214,47 @@ ul li:hover{
   
 }
 
+/*Project Header*/
+.project-header {	
+	padding-top: 120px;
+	margin-top: 500px;
+}
+
+/*Project Container*/
+.project-container {
+	display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    /*grid-gap: 0px;
+    border: 1px solid black;*/
+    width: 100%;
+}
+
+.project-child {
+	background-color: rgb(57, 62, 70);
+	margin: 0 auto;
+	text-align: center;
+  border-radius: 8px;
+  padding: 5em;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 0px;	
+	font-size: 20px;
+	color: floralwhite;
+}  
 
 /*About Me Container*/
 .aboutme-container {
+	padding-top: 120px;
 	margin-top: 500px;
+}
+
+.bio {
+	background-color: rgb(57, 62, 70);
+	margin: auto;
+  border-radius: 8px;
+  padding: 2em;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 0px;	
+	font-size: 20px;
 }

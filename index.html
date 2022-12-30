@@ -29,7 +29,9 @@
 	  <ul>
 	  <li class="home" onClick="document.getElementById('home').scrollIntoView();">Home</li>
 
-	  <a href="https://us20.list-manage.com/contact-form?u=fe1e4314457f53c3eb439372c&form_id=09a66f70b88f5affea6748838703d96c"><li class="contact">Contact</li></a>
+	  <li class="projects" onClick="document.getElementById('projects').scrollIntoView();">Projects</li>
+
+	  <a href="https://us20.list-manage.com/contact-form?u=fe1e4314457f53c3eb439372c&form_id=09a66f70b88f5affea6748838703d96c" target="_blank"><li class="contact">Contact</li></a>
 
 	  <li class="aboutme" onClick="document.getElementById('aboutme').scrollIntoView();">About Me</li>
 	  </ul>
@@ -44,7 +46,7 @@
 		</header>	
 		<div class="buffer col-12"></div>
 		<section class="text-center col-12">
-			<hr>
+			<hr id="first">
 			<a href="https://sites.google.com/site/awebsitecr/nothing-here">
 				<button class="btn btn-primary btn-xl">View Resume (Nothing here for now)</button>
 			</a>
@@ -53,12 +55,20 @@
 	</div>
 </div>
 
-<div class="aboutme-container align-items-center h-100" >
-	<h2 id="aboutme">About Me</h1>
+<div class="project-header" id="projects"><h2>Projects</h1><hr> <br><br></div>
+<div class="project-container h-100" >
+	<!--<h2>Projects</h1><hr> <br><br>-->
+ 
+ 	<div class='project-child clothes'>Clothing Store (Placeholder for future project)</div>
+  	<div class='project-child api'>API-based Website (Placeholder for future project)</div>
 
+</div>
 
-
-
+<div class="aboutme-container h-100" id="aboutme">
+	<h2>About Me</h1><hr> <br><br>
+			<div class="bio">
+				<p> I am a Computer Engineering technologist graduate currently working under the IT path with an interest of web development. My passion for development strives from features I like seeing to the web, to making my own version of what I want to show people as well. I love experimenting such ideas (clothing stores, a portfolio, etc.) in a way that it'll benefit my knowledge when it comes to creativity, and perhaps developing things of convenience to me or for others. </p>
+			</div>
 </div>
 
 <footer>© 2021 by Ruel John Cootauco</footer>
