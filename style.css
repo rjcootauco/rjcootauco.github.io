@@ -258,3 +258,7 @@ ul li:hover{
   box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 0px;	
 	font-size: 20px;
 }
+
+.bio#projectbio {
+	text-align: center;
+}
